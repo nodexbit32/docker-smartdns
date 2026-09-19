@@ -1,5 +1,5 @@
 #!/bin/sh
-ipset create cnset hash:net timeout 600
+ipset create cnset hash:ip timeout 600
 
 if [ ! -f /etc/smartdns/smartdns.conf ]; then
 	mkdir -p /etc/smartdns
